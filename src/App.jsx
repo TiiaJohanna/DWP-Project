@@ -4,9 +4,11 @@ import OrderInfo from "./OrderInfo"
 
 function App() {
   return (
-    <h2>Hello</h2>
-  )
+    Header,
+    OrderInfo
+  );
 }
+
 
 
 export default App

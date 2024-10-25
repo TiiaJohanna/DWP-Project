@@ -1,6 +1,6 @@
 
 // This function makes a table that shows products and their info
-function OrderInfo({ Product, Quantity}) {
+function OrderInfo({ productName, Quantity}) {
     return(
         <div>
             <h3>Order Info</h3>
