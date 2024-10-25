@@ -13,7 +13,6 @@ const headerStyling = {
     header: { 
         display: 'flex',
         alingItems: 'center',
-        padding: '20px'
     },
     image: {
         width: '80px',
