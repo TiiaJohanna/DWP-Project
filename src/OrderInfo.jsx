@@ -4,7 +4,7 @@ function OrderInfo({ productName, Quantity}) {
     return(
         <div>
             <h3>Order Info</h3>
-            <table>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>Product</th>
@@ -16,7 +16,7 @@ function OrderInfo({ productName, Quantity}) {
                     <tr>
                         <td>{productName.name}</td>
                         <td>{Quantity}</td>
-                        <td>{productName.price * Quantity + '€'}</td>
+                        <td>{productName.price * Quantity + ' €'}</td>
                     </tr>
                 </tbody>
             </table>

@@ -3,14 +3,24 @@ import logo from './assets/logo.png';
 function Header(){
     return(
         <header style={headerStyling.header}>
-            <img src={logo} alt='logo'></img>
-            <h1>Welcome to product page!</h1>
+            <img style={headerStyling.image} src={logo} alt='logo'></img>
+            <h1 style={headerStyling.text}>Welcome to product page!</h1>
         </header>
     );
 }
 
 const headerStyling = {
-    header: {
+    header: { 
+        display: 'flex',
+        alingItems: 'center',
+        padding: '20px'
+    },
+    image: {
+        width: '80px',
+        height: '80px'
+    },
+    text: {
+        margin: '20px'
     }
 }
 

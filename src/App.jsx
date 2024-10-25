@@ -1,12 +1,14 @@
 import Header from "./Header"
-import OrderInfo from "./OrderInfo"
+import SelectionOfProducts from "./OrderForm"
 
 
 function App() {
   return (
-    Header,
-    OrderInfo
-  );
+    <div>
+      <Header />
+      <SelectionOfProducts />
+    </div>
+  )
 }
 
 
