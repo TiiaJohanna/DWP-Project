@@ -10,4 +10,15 @@ function SelectionOfProducts(){
         {name:'Samsung 970 EVO 1TB SSD'},
         {name:'ASUS TUF Gaming X570'}
     ];
+
+    const prices = [
+        {price: 245},
+        {price: 180},
+        {price: 400},
+        {price: 85},
+        {price: 150},
+        {price: 210}
+    ];
 }
+
+
