@@ -14,9 +14,9 @@ function OrderInfo({ Product, Quantity}) {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{Product.name}</td>
+                        <td>{productName.name}</td>
                         <td>{Quantity}</td>
-                        <td>{Product.price * Quantity + '€'}</td>
+                        <td>{productName.price * Quantity + '€'}</td>
                     </tr>
                 </tbody>
             </table>

@@ -19,6 +19,47 @@ function SelectionOfProducts(){
         {price: 150},
         {price: 210}
     ];
+
+    const [productName, setProductName] = useState(products[0]);
+    const [Quantity, setQuantity] = useState(1);
+
+    const changingProduct = (e) => {
+        const productName = e.target.value;
+        const product = products.find((p) => p.name === productName);
+        setProductName(product);
+    }
+
+    const quantityIncrease = () => {
+        setQuantity((changeQuantity) => changeQuantity + 1);
+    }
+
+    const quantityDecrease = () => {
+        setQuantity((changeQuantity) => Math.max(0, changeQuantity - 1));
+    }
+
+    return(
+        <>
+        <h3>Select product</h3>
+        <label>
+            <span>Product: </span>
+            <select value={productName.name} onChange={changingProduct}>
+                {products.map((p) => (
+                    <option key={p.name} value={p.name}>
+                        {p.name + " ("+ p.price + "e)"}
+                    </option>
+                ))}
+            </select>
+        </label>
+        <br></br>
+        <span>Quantity: </span>
+        <button onClick={quantityDecrease}>-</button>
+        <span>{Quantity}</span>
+        <button onClick={quantityIncrease}>+</button>
+        <OrderInfo productName={productName} Quantity={Quantity}></OrderInfo>
+        </>
+    )
 }
+
+export default SelectionOfProducts;
 
 

@@ -1,9 +1,10 @@
+import Header from "./Header"
+import OrderInfo from "./OrderInfo"
 
 
 function App() {
   return (
-    <div>
-    </div>
+    <h2>Hello</h2>
   )
 }
 
