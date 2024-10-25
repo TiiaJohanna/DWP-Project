@@ -4,7 +4,7 @@ function OrderInfo({ productName, Quantity}) {
     return(
         <div>
             <h3>Order Info</h3>
-            <table border="1">
+            <table border={2}>
                 <thead>
                     <tr>
                         <th>Product</th>
