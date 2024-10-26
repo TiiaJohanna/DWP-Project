@@ -1,4 +1,4 @@
-import logo from './public/logo.png';
+import logo from './assets/logo.png';
 
 // Includes header and it's components (text,image)
 function Header(){
