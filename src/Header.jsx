@@ -1,5 +1,6 @@
 import logo from './assets/logo.png';
 
+// Includes header and it's components (text,image)
 function Header(){
     return(
         <header style={headerStyling.header}>
@@ -9,6 +10,7 @@ function Header(){
     );
 }
 
+// Some styling for the header, image and text
 const headerStyling = {
     header: { 
         display: 'flex',
