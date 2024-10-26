@@ -1,4 +1,6 @@
+import { useNavigate } from 'react-router-dom';
 import logo from './assets/logo.png';
+import SelectionOfProducts from './OrderForm';
 
 function Header(){
     return(
@@ -23,9 +25,23 @@ const headerStyling = {
     }
 }
 
-function pageStructure() {
+function StructureOfPage() {
     
-    const navigate = pageNavigate();
+    const navigate = useNavigate();
+
+    const visitCocktailData = () => {
+        navigate('/opendata');
+    }
+
+    return(
+        <div>
+            <Header />
+            <SelectionOfProducts />
+            <br></br>
+            <br></br>
+            <CocktailData />
+        </div>
+    )
 }
 
-export default Header; pageStructure;
+export default StructureOfPage;

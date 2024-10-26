@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Component to fetch and display cocktail data
 function CocktailData(){
@@ -25,6 +26,11 @@ function CocktailData(){
 
     // Displays an error message if there's an error in fetching data
     if (error) return <p>Error: {error}</p>;
+
+    const navigate = useNavigate();
+    const visitComponent = () => {
+        navigate('/');
+    }
 
     // Renders the list of coctails with images and instructions
     return(
