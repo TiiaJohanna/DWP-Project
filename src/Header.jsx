@@ -23,4 +23,9 @@ const headerStyling = {
     }
 }
 
-export default Header;
+function pageStructure() {
+    
+    const navigate = pageNavigate();
+}
+
+export default Header; pageStructure;
