@@ -1,6 +1,6 @@
 # Dynamic Web Page - Assignments
 This includes the component, opendata, version control and routing assignments.
-**Published Link here**:
+**Published Link here**: https://www.students.oamk.fi/~n3titi00/Dynamic%20Web%20Page/dist/
 
 ## Component
 This project is a simple React application that allows users to select a product from a dropdown list and specify the quantity. The application then displays the selected product, quantity and total price in an order summary.
